@@ -18,10 +18,6 @@ if (getUserMediaSupported()) {
   console.warn('getUserMedia() is not supported by your browser');
 }
 
-// Placeholder function for next step. Paste over this in the next step.
-function enableCam(event) {
-}
-
 // Enable the live webcam view and start classification.
 function enableCam(event) {
   // Only continue if the COCO-SSD has finished loading.
@@ -44,9 +40,6 @@ function enableCam(event) {
   });
 }
 
-// Placeholder function for next step.
-function predictWebcam() {
-}
 
 // Pretend model has loaded so we can try out the webcam code.
 var model = true;
@@ -108,4 +101,3 @@ function predictWebcam() {
     window.requestAnimationFrame(predictWebcam);
   });
 }
-
